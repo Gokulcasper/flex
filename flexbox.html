@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="flexstyle.css" />
+    <style>
+      /*.container {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+          or
+
+
+        justify-content: flex-end;
+        justify-content: space-between;
+        justify-content: center;
+      }*/
+      /*
+      .container {
+        width: 350px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+      }
+      */
+      /*
+        Or
+
+
+        align-content: flex-start; 
+        align-content: flex-end;
+        align-content: flex-center;
+        align-content: stretch;
+        align-content: baseline;
+        
+        */
+
+      /*
+      .box:nth-child(1) {
+        order: 5;
+      }
+      .box:nth-child(2) {
+        order: 3;
+      }
+      .box:nth-child(3) {
+        order: 2;
+      }
+      .box:nth-child(4) {
+        order: 4;
+      }
+      .box:nth-child(5) {
+        order: 1;
+      }
+      */
+      /*
+      .box:nth-child(5) {
+        align-self: flex-end;
+      }
+      .box:nth-child(3) {
+        align-self: flex-start;
+      }
+
+      .box:nth-child(2) {
+        align-self: center;
+      }
+
+      .box:nth-child(1) {
+        align-self: stretch;
+      }
+      */
+      .container {
+        width: 500px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+      }
+      .box {
+        padding: 1px;
+        margin: 1px;
+        width: 200px;
+        text-align: center;
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+      }
+      .box:nth-child(2) {
+        flex-shrink: 2;
+      }
+      /*
+    .box:nth-child(2) {
+        flex-grow: 2;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <h2>Align-Self</h2>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+    </div>
+  </body>
+</html>
